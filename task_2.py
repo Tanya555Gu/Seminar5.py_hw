@@ -5,8 +5,8 @@
 
 a = int(input('Введите число a -> '))
 b = int(input('Введите число b -> '))
-def sum(a, b):
+def summa(a, b):
     if b == 1:
         return a + b
-    return a + sum(1, b - 1)
-print(sum(a, b))
+    return a + summa(1, b - 1)
+print(summa(a, b))

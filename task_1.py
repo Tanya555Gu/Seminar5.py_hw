@@ -6,7 +6,7 @@
 a = int(input('Введите число a -> '))
 b = int(input('Введите число b -> '))
 def Power(a, b):
-    if (b < 1):
+    if (b == 0):
         return 1
     return a * Power(a, b - 1)
 print(f'{a} в степени {b} равно {Power(a, b)}')
